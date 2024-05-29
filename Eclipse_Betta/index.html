@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eclipse</title>
+    <style>
+        @font-face {
+    font-family: 'eclipse';
+    src: url('aAbsoluteEmpire.otf') format('opentype'), url('aAbsoluteEmpire.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: white;
+}
+#body{
+    font-family: Arial, sans-serif;
+    background-color: #e6e6e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.login-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 700px;
+    margin-left: 300px;
+    margin-right: 300PX;
+}
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.login-container input[type="submit"] {
+    background-color: #2619e6;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+.login-container input[type="submit"]:hover {
+    background-color: #2158ce;
+}
+.login-container .register-link {
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+}
+/*.text{
+    font-family: 'eclipse', Times, serif;
+    padding: 30px;
+    border-radius: 22px;
+    font-size: 50px;
+}*/
+/*==============MENU===*/
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('Imagens/image.jpg'); /* Caminho para a sua imagem de fundo */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    padding: 10px 20px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fixa o menu no topo */
+    top: 0;
+    z-index: 1000; /* Garante que o menu fique acima de outros elementos */
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+header img {
+    width: 40px;
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com transparência */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-top: 100px; /* Espaço para o menu fixo */
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login-container input[type="submit"] {
+    background-color: #2427db;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.login-container input[type="submit"]:hover {
+    background-color: #1225d4;
+}
+
+.login-container .register-link {
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <a href="">Eclipse</a>
+        <a href="">Fale conosco</a>
+        <a href="">Mais Ferramentas</a>
+        <img src="Icon/Aha-Soft-Space-Solar-eclipse.256.png" width="40px">
+    </header>
+    <div id="body">
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="/login" method="POST">
+            <label for="username">Nome de usuário</label>
+            <input type="text" id="username" name="username" placeholder="Digite seu nome de usuário" required>
+    
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+    
+            <input type="submit" value="Entrar">
+        </form>
+        <a href="/register" class="register-link">Registrar-se</a>
+    </div>
+    <script src="script.js"></script>
+</div>
+
+</body>
+</html>
+
+
+
+
